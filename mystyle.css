@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Open+Sans:wght@300&family=Yuji+Mai&display=swap');
+
+body {
+  background-color: #081537;
+  font-family: Open Sans;
+}
+
+h1 {
+    font-family: Estonia;
+}
+
+a {
+    text-decoration: none;
+    color: #081537;
+}
+
+a:hover {
+    color: #656E71;
+}
+
+#intro {
+  height: 100vh;
+  background-color: #E0C8A6;
+}
+
+#intro-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 125%;
+  object-fit: cover;
+  animation: sliding 180s linear infinite;
+}
+
+@keyframes sliding {
+    0% {
+      background-image: url("images/wave.jpg");
+      background-position: top;
+    }
+    23% {
+        background-image: url("images/wave.jpg");
+        background-position: bottom;
+    }
+
+    25% {
+      background-image: url("images/fuji.jpg");
+      background-position: bottom;
+    }
+    48% {
+      background-image: url("images/fuji.jpg");
+      background-position: top;
+    }
+
+    50% {
+      background-image: url("images/cranes.jpg");
+      background-position: top;
+    }
+    73% {
+      background-image: url("images/cranes.jpg");
+      background-position: bottom;
+    }
+
+    75% {
+      background-image: url("images/kanaya.jpg");
+      background-position: bottom;
+    }
+    98% {
+      background-image: url("images/kanaya.jpg");
+      background-position: top;
+    }
+
+    100% {
+      background-image: url("images/wave.jpg");
+      background-position: top;
+    }
+}
+
+#intro h1 {
+    color: white;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 150px;
+    text-shadow: 4px 4px 0 #081537, 4px -4px 0 #081537, -4px 4px 0 #081537, -4px -4px 0 #081537, 4px 0px 0 #081537, 0px 4px 0 #081537, -4px 0px 0 #081537, 0px -4px 0 #081537;
+    animation: appearing 3s linear;
+}
+
+@keyframes appearing {
+    0% {
+    opacity: 0.0;
+    }
+    100% {
+    opacity: 1.0;
+    }
+}
+
+.divider {
+    height:50px;
+    width: 100%;
+    background-image: url("https://www.freevector.com/uploads/vector/preview/28772/Red_Japanese_Wave_Seamless_Pattern.jpg");
+    background-repeat: repeat;
+    filter: hue-rotate(230deg);
+    background-size:50%;
+    -webkit-box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.5);
+}
+
+#bio {
+    background: #ccc0b7;
+    padding: 20px;
+    height: 440px;
+    display: flex;
+}
+
+#bio-image {
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+#bio-image img {
+    height: 360px;
+    width: auto;
+}
+
+.image-desc {
+    font-size: 12px;
+    display: absolute;
+    text-align: center;
+}
+
+#bio h2 {
+    color: black;
+    font-family: Yuji Mai;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 100px;
+    margin-left: -20px;
+}
+
+.text {
+    text-align: justify;
+    margin-right: 30px;
+    padding: 5px;
+    margin-left: -80px;
+}
+
+.title-section {
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+}
+
+#bio p {
+    padding: 8px;
+    font-size: 15px;
+}
+
+.source {
+    font-size: 12px;
+    text-align: right;
+}
+
+#gallery {
+    background: #C4CBCC;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.gallery-part {
+    background: #A3B0B5;
+    width: 95%;
+    margin: auto;
+    z-index: 0;
+}
+
+.japanese-text {
+    color: black;
+    font-family: Yuji Mai;
+    font-size: 130px;
+    position: absolute;
+    opacity: 0.05;
+    z-index: 1;
+}
+
+.gallery-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#gallery h1 {
+    padding: 30px;
+    text-align: center;
+}
+
+.gallery-title {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.gallery-tile {
+    height: 190px;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    z-index: 2;
+}
+
+.gallery-part img {
+    height: 80%;
+    width: 90%;
+    object-fit: cover;
+    border: 2px solid white;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.art-title {
+    font-size: 12px;
+}
+
+.gallery-part img:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.gallery-tile-vertical {
+    height: 300px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    z-index: 2;
+}
+
+footer {
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding: 20px;
+    background: #2F4257;
+}
+
+.creator {
+   display: flex;
+   margin-top: 5px;
+   align-items:center;
+   justify-content: center;
+}
+
+footer a {
+    color: white;
+    margin-left: 8px;
+}
+
+footer a:hover {
+    color: #C4CBCC;
+}
+
+
+footer img {
+    filter: invert(1);
+    width: 25px;
+}
