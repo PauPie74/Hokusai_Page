@@ -2,7 +2,7 @@
 
 > Link: https://paupie74.github.io/Hokusai_Page/
 
-A website about Hokusai Katsushika.
+A website design about Japanese artist Hokusai Katsushika.
 
 * Animated header with a slideshow
 * About Hokusai
